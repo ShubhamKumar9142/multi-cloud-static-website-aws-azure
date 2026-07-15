@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multi-Cloud Portfolio | AWS & Azure</title>
+
+    <meta
+        name="description"
+        content="A beginner multi-cloud portfolio project deployed on AWS and Microsoft Azure."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h2 class="logo">Cloud<span>Portfolio</span></h2>
+
+            <button
+                class="menu-button"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cloud">Cloud</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+
+            <p class="tag">☁ Multi-Cloud Project</p>
+
+            <h1>
+                Deploying the Web Across
+                <span>AWS & Azure</span>
+            </h1>
+
+            <p class="hero-description">
+                A beginner-friendly multi-cloud project demonstrating
+                static website deployment using Amazon Web Services
+                and Microsoft Azure.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#cloud" class="primary-button">
+                    Explore Project
+                </a>
+
+                <a href="#architecture" class="secondary-button">
+                    View Architecture
+                </a>
+            </div>
+
+            <div class="deployment-status">
+                <span class="status-dot"></span>
+                <p id="deploymentStatus">Checking deployment environment...</p>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section class="section" id="about">
+
+        <div class="section-heading">
+            <p class="section-label">ABOUT PROJECT</p>
+            <h2>What is Multi-Cloud?</h2>
+            <p>
+                Multi-cloud means using services from more than one
+                cloud provider. This project deploys the same website
+                on AWS and Microsoft Azure.
+            </p>
+        </div>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h3>2</h3>
+                <p>Cloud Platforms</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Static Website</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>24/7</h3>
+                <p>Cloud Availability</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Cloud Platforms -->
+    <section class="section cloud-section" id="cloud">
+
+        <div class="section-heading">
+            <p class="section-label">CLOUD SERVICES</p>
+            <h2>Platforms Used</h2>
+            <p>
+                The website is designed to be deployed independently
+                on two major cloud platforms.
+            </p>
+        </div>
+
+
+        <div class="cloud-container">
+
+            <!-- AWS -->
+            <article class="cloud-card aws-card">
+
+                <div class="cloud-icon">AWS</div>
+
+                <h3>Amazon Web Services</h3>
+
+                <p>
+                    AWS S3 provides object storage and supports
+                    static website hosting.
+                </p>
+
+                <ul>
+                    <li>✓ Amazon S3</li>
+                    <li>✓ Static Website Hosting</li>
+                    <li>✓ Object Storage</li>
+                    <li>✓ Public Website Endpoint</li>
+                </ul>
+
+                <button
+                    class="cloud-button"
+                    onclick="showCloudInfo('AWS')"
+                >
+                    Learn About AWS
+                </button>
+
+            </article>
+
+
+            <!-- Azure -->
+            <article class="cloud-card azure-card">
+
+                <div class="cloud-icon">AZ</div>
+
+                <h3>Microsoft Azure</h3>
+
+                <p>
+                    Azure Storage allows developers to host static
+                    web applications using the $web container.
+                </p>
+
+                <ul>
+                    <li>✓ Azure Storage</li>
+                    <li>✓ Blob Storage</li>
+                    <li>✓ Static Website Feature</li>
+                    <li>✓ Primary Web Endpoint</li>
+                </ul>
+
+                <button
+                    class="cloud-button"
+                    onclick="showCloudInfo('Azure')"
+                >
+                    Learn About Azure
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Architecture -->
+    <section class="section" id="architecture">
+
+        <div class="section-heading">
+            <p class="section-label">ARCHITECTURE</p>
+            <h2>Multi-Cloud Architecture</h2>
+            <p>
+                One source code is deployed separately to AWS
+                and Azure.
+            </p>
+        </div>
+
+
+        <div class="architecture-box">
+
+            <div class="architecture-node user-node">
+                <span>👨‍💻</span>
+                <h3>User</h3>
+                <p>Web Browser</p>
+            </div>
+
+            <div class="arrow">↓</div>
+
+            <div class="architecture-node source-node">
+                <span>💻</span>
+                <h3>Website Source Code</h3>
+                <p>HTML + CSS + JavaScript</p>
+            </div>
+
+            <div class="split-arrow">
+                <span>↙</span>
+                <span>↘</span>
+            </div>
+
+            <div class="architecture-clouds">
+
+                <div class="architecture-node">
+                    <span>☁</span>
+                    <h3>AWS S3</h3>
+                    <p>Static Website</p>
+                </div>
+
+                <div class="architecture-node">
+                    <span>☁</span>
+                    <h3>Azure Storage</h3>
+                    <p>Static Website</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section class="section skills-section">
+
+        <div class="section-heading">
+            <p class="section-label">LEARNING</p>
+            <h2>Skills Demonstrated</h2>
+        </div>
+
+        <div class="skills-container">
+
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>AWS S3</span>
+            <span>Azure Storage</span>
+            <span>Cloud Computing</span>
+            <span>Multi-Cloud</span>
+            <span>Web Deployment</span>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+
+        <div class="section-heading">
+            <p class="section-label">CONTACT</p>
+            <h2>Let's Connect</h2>
+            <p>
+                Interested in cloud computing and multi-cloud
+                architecture? Send a message.
+            </p>
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+            </div>
+
+            <button type="submit" class="primary-button form-button">
+                Send Message
+            </button>
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </section>
+
+
+    <!-- Modal -->
+    <div class="modal" id="cloudModal">
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                id="closeModal"
+                aria-label="Close modal"
+            >
+                ×
+            </button>
+
+            <h2 id="modalTitle">Cloud Platform</h2>
+
+            <p id="modalDescription">
+                Cloud platform information.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>CloudPortfolio</h3>
+
+        <p>
+            Multi-Cloud Static Website Deployment Project
+        </p>
+
+        <p>
+            AWS ☁ Azure
+        </p>
+
+        <p class="copyright">
+            © <span id="currentYear"></span> Multi-Cloud Project
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
